@@ -1,0 +1,37 @@
+{
+  "name": "e-commarce-api",
+  "version": "1.0.0",
+  "description": "e-commerce API",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "Softlab IT",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "compress-images": "^1.9.5",
+    "concat-stream": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-validator": "^6.9.0",
+    "faker": "^5.1.0",
+    "jimp": "^0.16.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mkdirp": "^1.0.4",
+    "mongoose": "^5.11.9",
+    "mongoose-fuzzy-searching": "^2.0.2",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.6.3",
+    "sslcommerz": "^1.7.0",
+    "streamifier": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
