@@ -13,7 +13,7 @@ const router = express.Router();
 
 
 router.post('/add-equity', controller.addEquity);
-router.get('/get-all-equitys', controller.getAllEquitys);
+router.get('/get-all-equities', controller.getAllEquities);
 router.get('/get-equity-by-equity-id/:equityId', controller.getEquityByEquityId);
 router.get('/get-single-equity-by-slug/:slug', controller.getSingleEquityBySlug);
 router.put('/edit-equity-by-equity', controller.editEquityData);

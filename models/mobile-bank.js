@@ -15,7 +15,7 @@ const schema = new Schema({
         type: Number,
         required: false
     },
-    cashOutbalance: {
+    cashOutBalance: {
         type: Number,
         required: false
     },

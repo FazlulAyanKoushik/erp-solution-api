@@ -36,7 +36,7 @@ exports.addEquity = async (req, res, next) => {
     }
 }
 
-exports.getAllEquitys = async (req, res, next) => {
+exports.getAllEquities = async (req, res, next) => {
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
