@@ -15,6 +15,13 @@ const schema = new Schema({
         type: Number,
         required: false
     },
+    depositsTo: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Deposit',
+            required: false
+        }
+    ],
     isSubAccount: {
         type: Boolean,
         required: false

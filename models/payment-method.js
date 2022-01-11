@@ -5,15 +5,15 @@ const Schema = mongoose.Schema;
 const schema = new Schema({
     paymentType: {
         type: String,
-        required: false
+        required: true
     },
     name: {
         type: String,
-        required: false
+        required: true
     },
     slug: {
         type: String,
-        required: false
+        required: true
     },
     bank: {
         type: mongoose.Schema.ObjectId,

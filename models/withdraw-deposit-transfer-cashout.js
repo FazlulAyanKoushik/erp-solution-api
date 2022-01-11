@@ -28,4 +28,4 @@ const schema = new Schema({
 });
 
 
-module.exports = mongoose.model('AllTypeTransaction', schema);
+module.exports = mongoose.model('WithdrawDepositTransferCashOut', schema);

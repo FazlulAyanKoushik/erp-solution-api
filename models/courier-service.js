@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 
 const schema = new Schema({
-    expenseName: {
+    name: {
         type: String,
         required: true
     },
@@ -11,21 +11,21 @@ const schema = new Schema({
         type: String,
         required: true
     },
-    amount: {
+    contactNo: {
+        type: String,
+        required: true
+    },
+    address: {
+        type: String,
+        required: true
+    },
+    openingBalance: {
         type: Number,
-        required: true
-    },
-    payFrom: {
-        type: String,
-        required: true
-    },
-    note: {
-        type: String,
         required: false
-    }
+    },
 }, {
     timestamps: true
 });
 
 
-module.exports = mongoose.model('PayExpense', schema);
+module.exports = mongoose.model('CourierService', schema);

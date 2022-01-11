@@ -7,15 +7,15 @@ const schema = new Schema({
         type: String,
         required: true
     },
-    transectionType: {
+    transactionType: {
         type: String,
         required: true
     },
-    transectionTypeSlug: {
+    transactionTypeSlug: {
         type: String,
         required: true
     },
-    transectionAccount: {
+    transactionAccount: {
         type: String,
         required: true
     },
