@@ -4,6 +4,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 // Require Post Schema from Model..
 const Cash = require('../models/cash');
+const Asset = require('../models/asset');
 
 exports.addCash = async (req, res, next) => {
     const errors = validationResult(req);
@@ -17,12 +18,20 @@ exports.addCash = async (req, res, next) => {
     }
 
     const data = req.body;
-    console.log(data)
      
     const cash = new Cash(data);
 
     try {
         const response = await cash.save();
+
+        // await Asset.findOneAndUpdate({
+        //     "$push": {
+        //         cash: response._id
+        //     }
+        // })
+
+        // const assetResponse = await Asset.save();
+
         res.status(200).json({
             response,
             message: 'Cash Added Successfully!'

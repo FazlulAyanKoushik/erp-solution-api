@@ -65,6 +65,7 @@ const costOfSalesRoutes = require("./routes/cost-of-sales");
 const expenseInventoryRoutes = require("./routes/expense-inventory");
 const paymentMethodRoutes = require("./routes/payment-method");
 const courierServiceRoutes = require("./routes/courier-service");
+const assetRoutes = require("./routes/asset");
 
 const paymentSSLRoutes = require("./routes/payment-ssl");
 const backupRestoreRoutes = require("./routes/backup-restore");
@@ -145,6 +146,7 @@ app.use('/api/cost-of-sales', costOfSalesRoutes);
 app.use('/api/expense-inventory', expenseInventoryRoutes);
 app.use('/api/payment-method', paymentMethodRoutes);
 app.use('/api/courier-service', courierServiceRoutes);
+app.use('/api/asset', assetRoutes);
 
 /**
  * MAIN BASE GET PATH
